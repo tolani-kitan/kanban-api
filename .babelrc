@@ -1,0 +1,22 @@
+{
+    "presets": ["@babel/preset-env"],
+    "ignore": ["/node_modules/"],
+    "plugins": [
+      [
+        "module-resolver",
+        {
+          "root": ["./"],
+          "alias": {
+            "controllers": "./controllers",
+            "models": "./models",
+            "routes": "./routes",
+            "config": "./config",
+            "services": "./services",
+            "middlewares": "./middlewares",
+            "validations": "./validations"
+          }
+        }
+      ]
+    ]
+  }
+    
